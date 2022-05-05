@@ -1,4 +1,4 @@
-##### Calculate number of cells per cluster per picture #####
+##### Calculate number of cells per cluster per image #####
 
 
 ### Input data: HistoCat .csv files of samples 
@@ -13,7 +13,7 @@
 #    group = indicate the group you want to compare 
 #            (we will average by group, e.g. CTRL vs AD)
 #    sampleID = string (number or letters) identifying the single sample in that group
-#    replicate = consecutive number indicating the replicate experiment of that sample
+#    replicate = consecutive number indicating the replicate experiment/image of that sample
 #                (we will average replicates for each sample first)  
 #
 #    example: CTRL_1072_1.csv
