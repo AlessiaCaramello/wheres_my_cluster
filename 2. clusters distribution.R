@@ -1,10 +1,15 @@
 ##### Analysis of clusters distribution in the cortex #####
 
 
-### Input data: output files from "1. number of cells per cluster per sample"
+### Input data: output files from "1. number of cells per cluster per sample":
+
+# samples_all = samples_all.csv
 
 # Input file should be in "tables" folder
 
+
+
+##### 0. Load libraries #####
 
 install.packages("tidyverse")
 library(tidyverse)
