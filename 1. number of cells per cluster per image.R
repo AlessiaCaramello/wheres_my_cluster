@@ -35,9 +35,6 @@ phenograph <- readline("Phenograph name?")
 
 ####  2. Create dataframes from csv files and create a sample summary table  ####
 
-# set working directory
-# setwd("~/Dropbox (The Francis Crick)/Alessia/Projects/UK DRI project/Image acquisitions/Image analysis/HistoCat analysis/R code")
-
 csv_to_df_samples <- function(){
   filelist = list.files(path = "input/samples",  pattern = ".csv") # Identify input files
   result <- data.frame() # create a dataframe to store results
