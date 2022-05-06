@@ -26,7 +26,7 @@ Based on cell clustering made in HistoCat (obtained with Phenograph function, re
 
 - **INPUT FILES:** 
   - .csv files from HistoCat
-- Run [1. number of cells per cluster per image](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/1.%20number%20of%20cells%20per%20cluster%20per%20picture.R)
+- Run [1. number of cells per cluster per image](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/1.%20number%20of%20cells%20per%20cluster%20per%20image.R)
 - When prompted with "Phenograph name" insert the Phenograph number assigned by HistoCat for the clustering 
 
 *example: Phenograph532086026*
