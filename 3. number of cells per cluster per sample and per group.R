@@ -1,11 +1,11 @@
 ##### Calculate average number of cells per cluster per sample and per group #####
 
 
-### Input data: output file from "1. number of cells per cluster per picture" - soft code - HistoCat"
+### Input data: output files from "1. number of cells per cluster per image":
 
 # samples_summary = clusters_summary.csv
 # samples_all = samples_all.csv
-#
+
 # all files should be in "table" in R code folder
 
 
@@ -30,9 +30,6 @@ library(naniar)
 library(data.table)
 
 ##### 1. Load data ####
-
-# set working directory
-# setwd("~/Dropbox (The Francis Crick)/Alessia/Projects/UK DRI project/Image acquisitions/Image analysis/HistoCat analysis/R code")
 
 # load data set
 clusters_summary <- read_csv('tables/clusters_summary.csv')
