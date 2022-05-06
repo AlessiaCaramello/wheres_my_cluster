@@ -1,8 +1,8 @@
-# wheres_my_cluster
+# Analysis of clusters cell number and distribution from HistoCat output files
 
 Hi everyone and thank you for your interest!
 
-wheres_my_cluster is written to analyse .csv output files from HistoCat for quantifying total and average cell number for each cluster/channel in each ROIs/sample/group typically generated with immunofluorescence (IF), multiplexIF and Imaging Mass Cytometry (IMC) experiments. Clustering can be done on HistoCat with the Phenograph function, make sure to to do this before exporting .csv files. 
+**wheres_my_cluster** is a simple code for analysing .csv output files from HistoCat for quantifying total and average cell number for each cluster/channel in each ROIs/sample/group typically generated with immunofluorescence (IF), multiplexIF and Imaging Mass Cytometry (IMC) experiments. Clustering can be done on HistoCat with the Phenograph function, make sure to to do this before exporting .csv files. 
 
 ## 1. Prepare csv. input files
 
@@ -49,6 +49,11 @@ This code will plot the distribution on the Y axis, of all cells automatically d
 
 - **INPUT FILES:** 
   - *samples_all* from Step 1 (in *tables* folder)
-- Run [3. number of cells per cluster per sample and per group]()
+  - *clusters_summary* from Step 1 (in *tables* folder)
+- Run [3. number of cells per cluster per sample and per group](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/3.%20number%20of%20cells%20per%20cluster%20per%20sample%20and%20per%20group.R)
+- **OUTPUT FILES:**
+  - *average_cells_per_cluster* (.csv file with average number of cell per cluster per sample)
+  - *cells per cluster per sample* (.pdf file with plot of *average_cells_per_cluster*)
+  - *cells per cluster per group* (.pdf file with plot of average cell per group)
 
 
