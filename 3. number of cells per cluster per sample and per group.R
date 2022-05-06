@@ -108,8 +108,6 @@ plot_group <- ggplot(data = clusters_avg_group_long,
        x = "Sample ID", 
        y = "Number of cells")
 
-plot_group
-
 # Print plot
 pdf(paste0("plots/cells per cluster per group.pdf"))
 print(plot_group)
