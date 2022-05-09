@@ -48,3 +48,28 @@ Based on cell clustering made with HistoCat Phenograph function, this code first
   - *clusters distribution* (.pdf file, ditribution along the y axis of the image/ROI)
 
 
+## Calculate channels intensity and average number of positive cells per channel per image/sample/group
+
+- **INPUT FILES:** 
+  - *samples_all* (output table from ([clusters_analysis](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/scripts/cluster_analysis.R)))
+
+- Define number of channels to analyse (e.g. 14)
+
+Calculate average intensity of each channel per image/sample
+Calculate total and average number of positive cells (pixel intensity above 0) per sample
+
+
+- **OUTPUT TABLES:** 
+  - *channel_intensity_avg_image* (.csv file with average pixel intensity per image)
+  - *channel_intensity_avg_sample* (.csv file with average pixel intensity per sample)
+  - *positive_cell_per_image* (.csv file with total number of cell type per image)
+  - *positive_cell_per_sample* (.csv file with average number of cell type per sample)
+  - *normalised_cell_number_image* (. csv file with average number of cell types per sample, normalised by ROIs length)
+  - *normalised_cell_number_sample* (. csv file with average number of cell types per image, normalised by ROIs length)
+  - *sample_all_cleared* (.csv file with channels intesity with 0 values replaced with N/A, Y_position and max_Y_position, file_name, sampleID, group and replicate indicated)
+
+- **OUTPUT PLOTS:** 
+  - *channel intensity per sample* (.pdf file, pixel intesity per channel per sample)
+  - *cell number per sample* (.pdf file, average number of cell types per sample)
+  - *normalised cell number per sample* (.pdf file, average number of cell types per sample, normalised by ROIs length)
+
