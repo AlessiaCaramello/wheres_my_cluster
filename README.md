@@ -54,10 +54,8 @@ Based on cell clustering made with HistoCat Phenograph function, this code first
   - *samples_all* (output table from ([clusters_analysis](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/scripts/cluster_analysis.R)))
 
 - Define number of channels to analyse (e.g. 14)
-
-Calculate average intensity of each channel per image/sample
-Calculate total and average number of positive cells (pixel intensity above 0) per sample
-
+- Calculate average intensity of each channel per image/sample
+- Calculate total and average number of positive cells (pixel intensity above 0) per sample
 
 - **OUTPUT TABLES:** 
   - *channel_intensity_avg_image* (.csv file with average pixel intensity per image)
