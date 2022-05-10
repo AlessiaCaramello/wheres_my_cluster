@@ -6,7 +6,7 @@ Hi everyone and thank you for your interest!
 
 **wheres_my_cluster** is a simple code for analysing .csv output files from HistoCat, typically generated from immunofluorescence (IF), multiplexIF and Imaging Mass Cytometry (IMC) experiments. 
 
-**wheres_my_cluster** quantifies total and average cell number for all clusters ([clusters_analysis](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/scripts/cluster_analysis.R)) and channels ([channels_analysis](link)) separately, averaging for ROIs/sample/group. Cell clustering is done with HistoCat using the Phenograph function, so make sure to to do this before exporting .csv files and note down the Phenograph number to use for the analysis. 
+**wheres_my_cluster** quantifies total and average cell number for clusters ([clusters_analysis](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/scripts/cluster_analysis.R)) and channels ([channels_analysis](link)) separately, averaging for ROIs/sample/group. Cell clustering is done with HistoCat using the Phenograph function, so make sure to to do this before exporting .csv files and note down the Phenograph number to use for the analysis. 
 
 **wheres_my_cluster** will also plot the distribution of cells in each cluster (regardless of group origin) on X or Y axis.
 
@@ -33,7 +33,7 @@ Based on cell clustering made with HistoCat Phenograph function, this code first
 
 - **INPUT FILES:** 
   - .csv files from HistoCat
-- Run ([clusters_analysis](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/scripts/cluster_analysis.R))
+- Run [clusters_analysis](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/scripts/cluster_analysis.R)
 - When prompted with "Phenograph name" insert the Phenograph number assigned by HistoCat for the clustering 
 
 *example: Phenograph532086026*
@@ -50,12 +50,13 @@ Based on cell clustering made with HistoCat Phenograph function, this code first
 
 ## Calculate channels intensity and average number of positive cells per channel per image/sample/group
 
-- **INPUT FILES:** 
-  - *samples_all* (output table from ([clusters_analysis](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/scripts/cluster_analysis.R)))
+Based on the channel intensity in each identified cell, this code will calculate the intensity of each channel, number of positive cells per channel  both total and normalised for image/ROIs length, averaged for each image/sample. Cells are considered positive when their pixel intensity is above zero, this can be changed to any other value in the code. Normalization by ROIs length is then multipled by 1000, for having bigger numbers.
 
-- Define number of channels to analyse (e.g. 14)
-- Calculate average intensity of each channel per image/sample
-- Calculate total and average number of positive cells (pixel intensity above 0) per sample
+- **INPUT FILES:** 
+  - *samples_all* (output table from [clusters_analysis](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/scripts/clusters_analysis.R))
+
+- Run the code [channels_analysis](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/scripts/channels_analysis.R)
+- When prompted, indicate the number of channels to analyse (e.g. 14)
 
 - **OUTPUT TABLES:** 
   - *channel_intensity_avg_image* (.csv file with average pixel intensity per image)
