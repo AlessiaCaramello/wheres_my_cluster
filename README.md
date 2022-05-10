@@ -55,7 +55,7 @@ Based on the channel intensity in each identified cell, this code will calculate
 - **INPUT FILES:** 
   - *samples_all* (output table from [clusters_analysis](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/scripts/clusters_analysis.R))
 
-- Run the code [channels_analysis](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/scripts/channels_analysis.R)
+- Run [channels_analysis](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/scripts/channels_analysis.R)
 - When prompted, indicate the number of channels to analyse (e.g. 14)
 
 - **OUTPUT TABLES:** 
