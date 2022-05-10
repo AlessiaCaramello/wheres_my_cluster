@@ -24,8 +24,6 @@ library(naniar)
 
 #### 1. Load data from previous analysis ####
 
-setwd("~/Dropbox (The Francis Crick)/Alessia/Projects/UK DRI project/Image acquisitions/Image analysis/HistoCat analysis/R code")
-
 samples_all <- read.csv("tables/samples_all.csv")
 
 #### 2. Define the columns (# of channels) to consider for analysis ####
