@@ -6,7 +6,7 @@ Hi everyone and thank you for your interest!
 
 **wheres_my_cluster** is a simple code for analysing .csv output files from HistoCat, typically generated from immunofluorescence (IF), multiplexIF and Imaging Mass Cytometry (IMC) experiments. 
 
-**wheres_my_cluster** quantifies total and average cell number for clusters ([clusters_analysis](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/scripts/cluster_analysis.R)) and channels ([channels_analysis](link)) separately, averaging for ROIs/sample/group. Cell clustering is done with HistoCat using the Phenograph function, so make sure to to do this before exporting .csv files and note down the Phenograph number to use for the analysis. 
+**wheres_my_cluster** quantifies total and average cell number for clusters ([clusters_analysis](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/scripts/clusters_analysis.R)) and channels ([channels_analysis](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/scripts/channels_analysis.R)) separately, averaging for ROIs/sample/group. Cell clustering is done with HistoCat using the Phenograph function, so make sure to to do this before exporting .csv files and note down the Phenograph number to use for the analysis. 
 
 **wheres_my_cluster** will also plot the distribution of cells in each cluster (regardless of group origin) on X or Y axis.
 
@@ -33,7 +33,7 @@ Based on cell clustering made with HistoCat Phenograph function, this code first
 
 - **INPUT FILES:** 
   - .csv files from HistoCat
-- Run [clusters_analysis](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/scripts/cluster_analysis.R)
+- Run [clusters_analysis](https://github.com/AlessiaCaramello/wheres_my_cluster/blob/main/scripts/clusters_analysis.R)
 - When prompted with "Phenograph name" insert the Phenograph number assigned by HistoCat for the clustering 
 
 *example: Phenograph532086026*
